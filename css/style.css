@@ -1,0 +1,340 @@
+@import boilerplate.css
+
+
+/* ==|== primary styles =====================================================
+   Author: m. :)
+   ========================================================================== */
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('font/league_gothic/league_gothic-webfont.eot');
+    src: url('font/league_gothic/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/league_gothic/league_gothic-webfont.woff') format('woff'),
+         url('font/league_gothic/league_gothic-webfont.ttf') format('truetype'),
+         url('font/league_gothic/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Clarendon-Bold';
+  src: url('font/clarendon/clrndnh-webfont.eot');
+  src: url('font/clarendon/clrndnh-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/clarendon/clrndnh-webfont.woff') format('woff'),
+       url('font/clarendon/clrndnh-webfont.ttf') format('truetype'),
+       url('font/clarendon/clrndnh-webfont.svg#ClarendonLTStdBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Clarendon-Light';
+  src: url('font/clarendon/clrndnl-webfont.eot');
+  src: url('font/clarendon/clrndnl-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/clarendon/clrndnl-webfont.woff') format('woff'),
+       url('font/clarendon/clrndnl-webfont.ttf') format('truetype'),
+       url('font/clarendon/clrndnl-webfont.svg#ClarendonLTStdLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Clarendon-Normal';
+  src: url('font/clarendon/clrndnn-webfont.eot');
+  src: url('font/clarendon/clrndnn-webfont.eot?#iefix') format('embedded-opentype'),
+       url('font/clarendon/clrndnn-webfont.woff') format('woff'),
+       url('font/clarendon/clrndnn-webfont.ttf') format('truetype'),
+       url('font/clarendon/clrndnn-webfont.svg#Clarendon-Normal') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'PFDinTextCondProMediumItalic';
+    src: url('font/pfdin/pfdintextcondpro-medital-webfont.eot');
+    src: url('font/pfdin/pfdintextcondpro-medital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/pfdin/pfdintextcondpro-medital-webfont.woff') format('woff'),
+         url('font/pfdin/pfdintextcondpro-medital-webfont.ttf') format('truetype'),
+         url('font/pfdin/pfdintextcondpro-medital-webfont.svg#PFDinTextCondProMediumItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PFDinTextCondProMedium';
+    src: url('font/pfdin/pfdintextcondpro-medium-webfont.eot');
+    src: url('font/pfdin/pfdintextcondpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/pfdin/pfdintextcondpro-medium-webfont.woff') format('woff'),
+         url('font/pfdin/pfdintextcondpro-medium-webfont.ttf') format('truetype'),
+         url('font/pfdin/pfdintextcondpro-medium-webfont.svg#PFDinTextCondProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1 {font-size:40px; font-weight:100;}
+
+h2 {font-size:29px; font-weight:100;}
+
+h3 {font-size:24px; font-weight:100;}
+
+h4 {font-size:16px; font-weight:100;}
+
+p { font-family:"Clarendon-Normal"; }
+
+.big {font-size:20px; color:#333; font-weight:100;}
+
+.worry { color:#333333; margin-top:33px; }
+
+.passion { color:#cb2e2f; }
+
+.surprise { color:#9bc8d7; }
+
+.joy { color:#fff; }
+
+.light { color:white; }
+
+.clear-block {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+a {
+  color:#cb2e2f;
+  font-weight:bold;
+}
+
+body { background:url('/img/texture_paper_RED.jpg') repeat; }
+
+#container {background:url('/img/texture.jpg') repeat;}
+
+#language { background:#fff; }
+
+#language a {color:#333333; font-family:"Clarendon-Normal", serif; font- text-decoration: none; text-transform: uppercase; text-decoration:none;}
+#language a:hover {color:#cb2e2f;}
+
+#branding { background:#9bc8d7; }
+
+#branding .logo { background:url('/img/CDM_logodef.png') no-repeat;width:285px; height:100px; margin:10px 0; }
+
+.social {
+  text-align:right;
+  margin-top:12px;
+}
+
+.social ul {
+  margin:0;
+  float:right;
+}
+
+.social ul li {
+  list-style:none;
+  display:block;
+  float:left;
+  margin:0;
+}
+
+.social .links {
+  margin-top:10px;
+}
+
+.social .links li a {
+  width:55px;
+  height:55px;
+  float:left;
+  margin-right:5px;
+  display:block;
+  overflow:hidden;
+  text-indent:-9999px;
+}
+
+.social .links li a.tweet {
+  background:url('/img/tweet.png') center center no-repeat;
+}
+
+.social .links li a.fb {
+  background:url('/img/fb.png') center center no-repeat;
+}
+
+.social .links li a.in {
+  background:url('/img/linkedin.png') center center no-repeat;
+}
+
+.social .links li a:hover {
+  background:url('/img/seguici.png') center center no-repeat;
+}
+
+.date { font-family:"Clarendon-Normal", serif; text-transform:uppercase; color:#333;}
+
+.papers {background:url('/img/mani.png') no-repeat; width:185px; height:240px; margin:30px 0 0 100px;}
+
+footer .write-us {
+  text-align:right;
+  font-family: "Clarendon-Normal";
+  color:white;
+  font-size:18px;
+}
+
+footer .write-us a {
+  color:white;
+  text-decoration:none;
+}
+
+h4 { font-family: "Clarendon-Normal"; text-transform: uppercase; }
+
+h2.joy {font-family:"Clarendon-Normal"; font-weight:normal; line-height:30px;  }
+
+#main h1 {
+  margin-top:60px;
+  text-transform:uppercase;
+  font-family:'PFDinTextCondProMedium', Helvetica, sans-serif;
+}
+
+.stripes {
+  margin-top:55px;
+  background:url('/img/midfooter.jpg') top left #9BC8D7 repeat-x; color:#fff; height:177px;
+}
+
+#waiting_for {
+  margin-top:70px;
+}
+
+#waiting_for h3 span.joy {
+  font-family: "PFDinTextCondProMedium", Helvetica, sans-serif;
+  font-size:24px;
+  color:white;
+}
+
+#waiting_for h3 {
+  font-family:"Clarendon-Normal"; 
+  font-weight:normal;
+  text-transform: uppercase;
+  font-size:20px;
+  line-height:20px;
+  color:#333;
+  margin:0;
+  margin-bottom:14px;
+}
+
+#waiting_for p {
+  font-family:"Clarendon-Normal"; 
+  font-size:18px;
+  line-height:21px;
+  color:#333;
+}
+
+.counter {
+  margin-top:40px;
+}
+
+.counter h3 {
+  font-family: "PFDinTextCondProMedium", Helvetica, sans-serif;
+  font-size:21px;
+  color:#333;
+  text-transform:uppercase;
+  margin-bottom:5px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds,
+.countdown_section {
+  text-align:center;
+  background:white;
+  color:#333;
+  padding:8px;
+  float:left;
+  width:45px;
+  margin-left:10px;
+  display:block;
+  font-family: "PFDinTextCondProMedium", Helvetica, sans-serif;
+  font-size:13px;
+  color:#333;
+  text-transform:uppercase;
+}
+
+.countdown_amount {
+  font-family:"Clarendon-Normal";
+  font-size:36px;
+  line-height:16px;
+  color:#9BC8D7;
+  display:block;
+}
+
+.countdown_section:first-child {
+  margin-left:0;
+}
+
+.counter .inner {
+  padding:10px;
+  background:#CB2E2F;
+  position:relative;
+}
+
+.counter .inner .line {
+  position:absolute;
+  top:50px;
+  left:0px;
+  height:1px;
+  width:100%;
+  background:#333;
+}
+
+/* ==|== non-semantic helper classes ======================================== */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* ==|== media queries ====================================================== */
+
+@media only screen and (min-width: 480px) {
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+
+
+/* ==|== print styles ======================================================= */
+ 
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
+
+
+
+

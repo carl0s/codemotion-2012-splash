@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel=”shortcut icon” href=”favicon.ico” type=”image/x-icon” />
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/960/960_12_col.css" type="text/css">
+  <link rel="stylesheet" href="css/960/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/960/text.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="image_src" href="/img/codemotion_fb.jpg" />
+  <!-- end CSS-->
+  <script src="js/less.min.js" type="text/javascript"></script>
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="js/libs/jquery-1.6.2.min.js"></script>
+  <script type="text/javascript" src="js/mylibs/jquery.countdown.js"></script>
+  <script type="text/javascript">
+  $(function () {
+    var austDay = new Date();
+    austDay = new Date(austDay.getFullYear(), 11, 14);
+    $('#c4p_countdown').countdown({until: austDay});
+  });
+  </script>
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+    	<div id="language"> 
+    		<div class="container_12">
+          <div class="grid_12"><a href="/en">English</a></div>
+	    	</div>
+	    </div>
+	    <div id="branding">
+				<div class="container_12">
+          <div class="grid_12">
+            <div class="logo grid_4 alpha"></div>
+            <div class="social prefix_3 grid_5 omega">
+              <ul class="2011 madrid">
+                <li>
+                  <a href="http://2011.codemotion.it" title="visita il sito della scorsa edizione"><img src="/img/codemotion11.png" alt="codemotion 2011" /></a>
+                </li>
+                <li>
+                  <a href="http://www.codemotion.es" title="visita codemotion Madrid"><img src="/img/madrid.png" alt="codemotion madrid 2012" /></a>
+                </li>
+              </ul>
+              <ul class="links">
+                <li><a href="http://twitter.com/CodemotionRoma" target="_blank" class="tweet" title="follow us"></a></li>
+                <li><a href="http://www.facebook.com/pages/Codemotion/149953948360255"  target="_blank" class="fb" title="like us"></a></li>
+                <li><a href="http://www.linkedin.com/groups?home=&gid=1467067" target="_blank" class="in" title="add us"></a></li>
+              </ul>
+            </div>
+          </div>
+				</div>
+    	</div>
+    </header>
+    <div id="main" role="main">
+    	<div class="container_12">
+        <div class="grid_12">
+          <div id="main" class="grid_8 alpha">
+            <h4 class="worry">l'evento aperto a tutti i linguaggi e le tecnologie</h4>
+            <h2 class="joy">Codemotion cresce con due novit&agrave;: raddoppiamo le giornate di manifestazione a Roma e inauguriamo Codemotion Madrid. Roma e Madrid in contemporanea!</h2>
+            <h1><span class="passion">roma</span><span class="joy"> 23+24.03.2012</span></h1>
+            <p class="big">Parallele di talk tecnici, formazione, nuovi trend, workshops e Key Notes con ospiti internazionali</p>
+          </div>
+          <div class="sidebar grid_4 omega">
+            <div class="papers"></div>
+            <p class="big">
+              <span class="passion">//</span> La Call for papers è aperta<br/>
+              <a target="_blank" class="light" href="/call-for-paper/propose-session" title="iscriviti a codemotion 2012 e proponi un talk">Invia la tua proposta</a>
+            </p>
+          </div>
+        </div>
+			</div>
+			<div class="stripes">
+  			<div class="container_12">
+          <div class="grid_12">
+            <div id="waiting_for" class="grid_8 alpha">
+              <h3><span class="joy">dal 19 marzo al 22 marzo:</span> aspettando codemotion</h3>
+              <p>Incontri di approfondimento, iniziative legate all’innovazione, in collaborazione con community, aziende e partner.</p>
+            </div>
+            <div class="grid_4 omega">
+              <div class="counter">
+                <h3> tutti i dettagli e sito online fra:</h3>
+                <div class="inner clearfix">
+                  <div id="c4p_countdown"></div>
+                  <div class="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+    </div>
+  </div> <!--! end of #container -->
+      <footer>
+        <div class="container_12">
+          <div class="prefix_8 grid_4 write-us omega"> Scrivici a <a href="mailto:info@codemotion.it">info@codemotion.it</a> </div>
+        </div>
+      </footer>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+  <script> // Change UA-XXXXX-X to be your site's ID
+    window._gaq = [['_setAccount','UA-27394342-1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {}
+  
+* { outline:none; } 
+
+@round(@radius: 5px) {
+  border-radius:@radius;
+  -moz-border-radius:@radius;
+  -webkit-border-radius:@radius;
+  behavior:url(PIE.htc);
+  }
+
+@roundTop(@radius: 5px) {
+  border-radius:@radius @radius 0 0;
+  -moz-border-radius: @radius @radius 0 0;
+  -webkit-border-radius: @radius @radius 0 0;
+  behavior:url(PIE.htc);
+  }
+
+@roundBottom(@radius: 5px) {
+  border-radius-bottomleft:0 0 @radius @radius ;
+  -moz-border-radius: 0 0 @radius @radius;
+  -webkit-border-radius:0 0 @radius @radius;
+  behavior:url(PIE.htc);
+  }  
+
+@shadow(@pos; @hor:0; @ver:0; @pixel: 15px; @color:#757552) {
+  box-shadow:@pos @hor @ver @pixel @color;
+  -moz-box-shadow: @pos @hor @ver @pixel @color; 
+  -webkit-box-shadow: @pos @hor @ver @pixel @color;
+  behavior:url(PIE.htc);
+  }
+
+ 
+@block(@width; @height; @margin: 0 auto) {
+  display:block;
+  width:@width;
+  height:@height;
+  margin:@margin;
+  }
+  
+@reset(@width; @height) {
+  border:none;
+  margin:0;
+  padding:0;
+  width:@width;
+  height:@height;
+  }
+
+
+@item { float:left; }  
+
+@worry { color:#333333; }
+
+@passion { color:#cb2e2f; }
+
+@surprise { color:#9bc8d7; }
+
+@joy { color:#fff; }
+
+a:link, a:visited { text-decoration:none; }
+
+@replace(@size : 15px) {
+ font-family: "museo-sans-1","museo-sans-2";
+ font-size:@size;
+ }
